@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body{
+                background: linear-gradient(120deg,#2980b9,#8e44ad);
+            }
+            
+            .box{
+                border-color: white;
+                border-style: solid;
+                height: 80vh;
+                width: 35%;
+                transform:translate(-50%,-50%);
+                border-radius:10px;
+                top:50%;
+                position:absolute;
+                left:50%;
+                background-color:white;
+                text-align: left;
+                font-size: 35px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding: 30px 30px 30px 30px;
+            }
+            .box h1{
+                font-size: 37px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align:center;
+            }
+            .box a{
+
+            }
+            #button{
+    width: 100px;
+    height: 46px;
+    font-size: 21px;
+    cursor: pointer;
+    background: #2691d9;
+    color: white;
+    border: none;
+    transition: all .4s;
+    float: right; 
+    border-radius: 7px; 
+    padding: 10px;
+}
+#button:hover{
+     border-radius: 5px;
+     transform: translate(-10px);
+     box-shadow: 0 7px 0 -2px #f85959,
+     0 15px 0 -4px #39a2db,
+     0 16px 10px -2px #39a2db;
+ }
+ #button1{
+    width: 100px;
+    height: 46px;
+    font-size: 21px;
+    cursor: pointer;
+    background: #2691d9;
+    color: white;
+    border: none;
+    transition: all .4s;
+    float: left; 
+    border-radius: 7px; 
+    padding: 10px;
+}
+#button1:hover{
+     border-radius: 5px;
+     transform: translate(-10px);
+     box-shadow: 0 7px 0 -2px #f85959,
+     0 15px 0 -4px #39a2db,
+     0 16px 10px -2px #39a2db;
+ }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div>
+                <h1>Question #1</h1>
+                </div>
+                <form action="/success" method="POST">
+                    How did you spend your time during the lockdown?
+                    <br><br>
+                        <input type="radio" id="Relaxed" name="question1" value="Relaxed">
+                        <label for="Relaxed">A. Relaxed</label><br>
+                        <input type="radio" id="Spend time in Gaming" name="question1" value="Spend time in Gaming">
+                        <label for="Spend time in Gaming">B. Spend time in Gaming</label><br>
+                        <input type="radio" id="Read novels" name="question1" value="Read novels">
+                        <label for="Read novels">C. Read novels</label><br>
+                        <input type="radio" id="All of the above" name="question1" value="All of the above">
+                        <label for="All of the above">D. All of the above</label><br>
+                        <br>
+                     <!--   <input type="submit" value="submit"><br> -->
+                    
+                        <input type="submit" value="Next" id="button" />
+                </form>
+                        
+ <!--                         
+<div class="button">
+<a style="font-size: 18px; text-decoration: none; float: right;" href="/login"><strong>Next</strong></a> -->
+<!--<input type="button" value="Next" id="button"> -->
+ <!--                     </form>   -->
+
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

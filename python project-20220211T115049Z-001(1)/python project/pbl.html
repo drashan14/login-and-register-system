@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+    <style>
+        body{
+            top: 0;
+            left:0;
+            bottom: 0;
+            right: 0;
+      overflow: hidden;
+      background-image: linear-gradient(120deg, #2980b9, #8e44ad);
+    }
+        #grad
+        {
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(to bottom right, #2980b9, #8e44ad);
+        }
+        
+        h1 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 40px;
+            text-align: center;
+            padding: 5px;
+            text-align: center;
+            color: white;
+            background: -webkit-linear-gradient(120deg,#2980b9,#8e44ad);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+        }
+
+        .questions {
+            font-size: 24px;
+            background: -webkit-linear-gradient(120deg,#2980b9,#8e44ad);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+        }
+        .quest {
+            font-size: 24px;
+            background: -webkit-linear-gradient(120deg,#2980b9,#8e44ad);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+            text-align: left
+            padding-left : 0px;
+        }
+        
+
+        .Q1 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 5px;
+            width: 30%;
+            background-color: solid silver;
+            border-color: white;
+            border-style: solid;
+            height: 45vh;
+            float: left;
+            background-color: white;
+            margin: 10pt;
+            border-radius: 7px;
+            margin-top: 0px;
+            color: black;
+        }
+
+        .Q2 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 5px;
+            width: 30%;
+            border-color: white;
+            border-style: solid;
+            height: 45vh;
+            margin: 10pt;
+            float: left;
+            background-color: white;
+            margin-top: 0px;
+            border-radius: 7px;
+            color: black;
+        }
+
+
+        .Q3 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 5px;
+            width: 30%;
+            border-color: white;
+            border-style: solid;
+            height: 45vh;
+            float: left;
+        
+            margin: 10pt;
+            border-radius: 7px;
+            margin-top: 0px;
+            color: black;
+        }
+
+        .Q4 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 5px;
+            width: 30%;
+            border-color: white;
+            border-style: solid;
+            height: 45vh;
+            float: left;
+            margin: 10pt;
+            border-radius: 7px;
+            margin-top: 0px;
+            color: black;
+        }
+
+        .circle {
+            position: absolute;
+            top: 100px;
+            right: 150px;
+            width: 30%;
+            border-color: white;
+            border-style: solid;
+            height: 120px;
+            /*float: left;*/
+            background-color: white;
+            border-radius: 500px;
+            color: black;
+            background-image: url("back1.png");
+        }
+        #col{
+            
+font-size: 17px;
+font-weight: 500;
+color: black;
+        }
+        #guide{
+            color: black;
+    
+        }
+        #topdiv {
+            position: relative;
+            width: 15%;
+            border-color: transparent;
+            border-style: solid;
+            height: 91vh;
+            float: left;
+            margin-top: 0px;
+            background: transparent;
+            border-radius: 7px;
+            margin-right: 10px;
+            color: black;
+        }
+        .alig{
+            text-align: left;
+            color: black;
+        }
+        .button{
+    width: 100px;
+    height: 46px;
+    font-size: 21px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: none;
+    transition: all .4s;
+    float: left; 
+    border-radius: 7px; 
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+        #button1{
+    width: 130px;
+    height: 46px;
+    font-size: 21px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: none;
+    transition: all .4s;
+    float: left; 
+    border-radius: 7px; 
+    padding-left: 0px;
+    padding: 15px;
+    padding-top: 8px;
+}
+#button1:hover{
+     border-radius: 5px;
+     transform: translate(-10px);
+     box-shadow: 0 7px 0 -2px #f85959,
+     0 15px 0 -4px #39a2db,
+     0 16px 10px -2px #39a2db;
+ }
+ .button h1{
+     padding-top: 0px;
+ }
+    </style>
+</head>
+
+<body>
+    
+    <!-- <button>ABCD</button> -->
+<!-- <h1 id="topdiv" style=" color: black;"> -->
+    
+    <div id="topdiv">
+        <!--<a style="font-size: 18px; text-decoration: none; float: right;" href="/login"><strong>Next</strong></a> -->
+        <a href="/about">
+        <button type="button" id="button1" class="button">About us</button></a>    
+    </div>
+<!-- </h1>  -->
+
+
+<div class="Q1" style="background: white">
+    <div id="col">
+    <h3 class="questions">Q.1 How did you spend your time during lockdown?</h3>
+    A)Slept a lot</br> {{ num1 }} %
+    <br>B)Played games</br>{{ num2 }} %
+    <br>C)Read books</br>{{ num3 }} %
+    <br>D)All of the above</br>{{ num4 }} %
+    </div>
+</div>
+
+
+
+
+<div class="Q2" style="background: white">
+    <div id="col">
+        <h3 class="questions">Q.2 What do you think of college life in distance learning?</h3>
+    A)Less excited</br>{{ num5 }} %
+    <br>B)More excited</br>{{ num6 }} %
+    <br>C)Same as previous</br>{{ num7 }} %
+    <br>D)Prefer not to say.</br>{{ num8 }} %
+    </div>
+    
+</div>
+
+
+
+
+<div class="Q3" style="background: white">
+    <div id="col">
+    <h3 class="questions">Q.3 Do you miss interacting with people?</h3>
+    A)Yes, just want to socialize again.</br>{{ num9 }} %
+    <br>B)No, not at all. I like living like this.</br>{{ num10 }} %
+    <br>C)Maybe, sometimes</br>{{ num11 }} %
+    <br>D)Other</br>{{ num12 }} %
+    </div>
+</div>
+
+
+
+<div class="Q4" style="background: white">
+    <div id="col">
+        <h3 class="questions">Q.4 What is more important in your life?</h3>
+        A)Peace</br>{{ num13 }} %
+        <br>B)Achievement</br>{{ num14 }} %
+        <br>C)Work</br>{{ num15 }} %
+        <br>D)Happiness</br>{{ num16 }} %
+        </div>
+</div>
+
+</div>
+</body>
+</html>
